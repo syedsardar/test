@@ -6,7 +6,6 @@ import re
 url = input('URL to get subdomain name: ')
 result = re.findall('^((http|https)(\:\/\/))?(www\.)?(\w+\.)?\w+\.\w+(\/.+)?$', url)
 
-print(result)
 if result:
 	print('Subdomain is: ', result[0][4][:-1])
 else:
